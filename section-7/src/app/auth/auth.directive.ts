@@ -7,7 +7,7 @@ import { AuthService } from './auth.service';
   standalone: true
 })
 export class AuthDirective {
-  userType = input.required<Permission>();
+  userType = input.required<Permission>({ alias: 'appAuth' });
   private authService = inject(AuthService);
   private templateRef = inject(TemplateRef);
   private viewContainerRef = inject(ViewContainerRef);
