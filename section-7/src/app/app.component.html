@@ -1,0 +1,12 @@
+<main>
+  <app-learning-resources />
+
+  <hr />
+
+  <app-auth />
+
+
+  <p *appAuth="'admin'" class="protected-content admin">Admin acces</p>
+  <p *appAuth="'user'" class="protected-content authenticated">User acces</p>
+  <p *appAuth="'guest'" class="protected-content unauthenticated">Guest acces</p>
+</main>
